@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import Navbar from "@/compontents/Navbar";
-import Footer from "@/compontents/Footer";
+import Navbar from "@/compontents/shered/Navbar";
+import Footer from "@/compontents/shered/Footer";
 
 export const metadata: Metadata = {
   title: "Baraka E-Shop",
