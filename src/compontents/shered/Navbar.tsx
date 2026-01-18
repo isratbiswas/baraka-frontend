@@ -14,11 +14,11 @@ const Navbar = () => {
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-3">
             <Link href={"/login"} className="font-bold hover:text-[#5D866C]">
-              Login
+              LOGIN
             </Link>
             <span className="text-[#5D866C]">|</span>
             <Link href={"/register"} className="font-bold hover:text-[#5D866C]">
-              Register
+              REGISTER
             </Link>
           </div>
         </div>
