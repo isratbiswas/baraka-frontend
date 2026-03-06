@@ -8,17 +8,17 @@ interface MobileSidebarProps {
   onClose: () => void;
 }
 const categories = [
-  { name: "Shoes", icon: "👟" },
-  { name: "Bag", icon: "👜" },
-  { name: "Jewelry", icon: "💍" },
-  { name: "Beauty And Personal Care", icon: "💄" },
-  { name: "Men's Clothing", icon: "👕" },
-  { name: "Women's Clothing", icon: "👗" },
-  { name: "Baby Items", icon: "🍼" },
-  { name: "Eyewear", icon: "👓" },
-  { name: "Office Supplies", icon: "📎" },
-  { name: "Seasonal Products", icon: "🎄" },
-  { name: "Phone Accessories", icon: "📱" },
+  { name: "Fresh Fruits", icon: "🍎" },
+  { name: "Premium Dates", icon: "🌴" },
+  { name: "Organic Honey", icon: "🍯" },
+  { name: "Desi Ghee", icon: "🧈" },
+  { name: "Healthy Nuts", icon: "🥜" },
+  { name: "Natural Seeds", icon: "🌱" },
+  { name: "Dry Fruits", icon: "🍇" },
+  { name: "Organic Products", icon: "🌿" },
+  { name: "Energy Snacks", icon: "🥥" },
+  { name: "Gift Packs", icon: "🎁" },
+  { name: "Special Offers", icon: "🔥" },
 ];
 
 export function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
