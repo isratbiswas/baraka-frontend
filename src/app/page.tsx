@@ -1,9 +1,9 @@
-import Image from "next/image";
+import HeroCarousel from "@/compontents/modules/home/Carousel";
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-red-500">BARAKA</h1>
+      <HeroCarousel />
     </>
   );
 }

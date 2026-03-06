@@ -2,6 +2,7 @@
 import { CheckCircle2, Eye, EyeOff, Loader2, Lock, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 const LoginForm = () => {
   const [showPass, setShowPass] = useState(false);
@@ -65,8 +66,8 @@ const LoginForm = () => {
               transition={{ delay: 0.3 }}
               className="text-emerald-500/70 text-lg mb-12"
             >
-              BARAKA-E brings you premium quality halal food, groceries, and
-              daily essentials with trusted sourcing and fast delivery.
+              BARAKA-E-Shop brings you premium quality halal food, groceries,
+              and daily essentials with trusted sourcing and fast delivery.
             </motion.p>
 
             <motion.div
@@ -129,16 +130,17 @@ const LoginForm = () => {
           >
             <div className="flex lg:hidden items-center gap-3 mb-8 justify-center">
               <span className="text-2xl font-bold text-gray-900 tracking-tighter">
-                BARAKA-E-Shop
+                BARAKA<span className="text-[#5D866C]">-E-Shop</span>
               </span>
             </div>
 
             <div className="bg-white border border-gray-100 rounded-[2.5rem] p-10 shadow-[0_20px_50px_rgba(0,0,0,0.03)]">
               <div className="mb-8 text-left">
                 <h1 className="text-2xl font-bold text-gray-900 mb-2">
-                  Welcome to BARAKA-E-Shop
+                  Welcome to{" "}
+                  <span className="text-[#5D866C]"> BARAKA-E-Shop</span>
                 </h1>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-500 text-sm">
                   Sign in to order fresh and trusted food products
                 </p>
               </div>
@@ -229,13 +231,13 @@ const LoginForm = () => {
                 </motion.button>
               </form>
 
-              <div className="mt-8 pt-8 text-center border-t border-gray-50">
+              <div className="mt-4 pt-8 text-center border-t border-gray-50">
                 <button
                   type="button"
                   //   onClick={fillDemoCredentials}
                   className="text-xs font-bold text-emerald-600 bg-emerald-50 px-4 py-2 rounded-full hover:bg-emerald-100 transition-colors"
                 >
-                  Explore Our Fresh Products
+                  You have any Account?<Link href="/register">Sign In</Link>
                 </button>
               </div>
             </div>

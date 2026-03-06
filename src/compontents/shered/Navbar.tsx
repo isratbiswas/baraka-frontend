@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="hidden md:flex container mx-auto px-4 py-4 items-center justify-between gap-8">
           <Link href="/" className="flex-shrink-0">
             <h1 className="font-extrabold text-2xl tracking-tighter text-gray-900">
-              BARAKA<span className="text-[#5D866C]">-E</span>
+              BARAKA<span className="text-[#5D866C]">-E-Shop</span>
             </h1>
           </Link>
           <div className="flex-grow max-w-2xl">
