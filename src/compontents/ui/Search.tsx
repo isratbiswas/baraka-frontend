@@ -1,4 +1,6 @@
-import { Search as SearchIcon, Camera } from "lucide-react";
+"use client";
+import { useState } from "react";
+import { Search as SearchIcon, Camera, Menu } from "lucide-react";
 
 const Search = () => {
   return (

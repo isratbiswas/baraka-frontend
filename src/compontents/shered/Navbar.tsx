@@ -1,5 +1,6 @@
-import Link from "next/link";
+"use client";
 
+import Link from "next/link";
 import {
   Heart,
   ShoppingCart,
@@ -7,10 +8,14 @@ import {
   Grid,
   Phone,
   MessageCircle,
+  Menu,
 } from "lucide-react";
 import Search from "../ui/Search";
+import { useState } from "react";
+import { MobileSidebar } from "./MobileSideBar";
 
 const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <>
       <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-100 shadow-sm">
@@ -36,7 +41,15 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="md:hidden p-3 bg-[#5D866C]">
+        <div className="md:hidden flex p-3 bg-[#5D866C]">
+          <div className=" text-white">
+            <button
+              onClick={() => setIsSidebarOpen(true)}
+              className="lg:hidden p-2"
+            >
+              <Menu size={24} />
+            </button>
+          </div>
           <Search />
         </div>
       </header>
@@ -83,6 +96,10 @@ const Navbar = () => {
         <button className="bg-white p-3 rounded-full shadow-xl border border-gray-100 text-gray-800">
           <Heart size={22} />
         </button>
+        <MobileSidebar
+          isOpen={isSidebarOpen}
+          onClose={() => setIsSidebarOpen(false)}
+        />
       </div>
     </>
   );
